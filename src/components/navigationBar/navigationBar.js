@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navigationBar.css';
 
-function navigationBar() {
+function NavigationBar() {
     const [profileImage, setProfileImage] = useState('default-image.jpg');
 
     const handleImageUpload = (e) => {
@@ -14,12 +14,16 @@ function navigationBar() {
             reader.readAsDataURL(file);
         }
     };
-  return (
-    <div className='navbar'>
-      
-    </div>
-  )
+    return (
+        <div className='navbar'>
+            <div className='logo'>
+                <img src='logo.png' alt='hotel-logo'/>
+
+            </div>
+        
+        </div>
+    )
 }
 
-export default navigationBar;
+export default NavigationBar;
 
