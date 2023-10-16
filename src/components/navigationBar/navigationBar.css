@@ -14,3 +14,54 @@
 .logo-name span{
     color:#696969;
 }
+.profile-image-label{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 2px solid #2d3253;
+}
+.default-image{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.default-image img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+#image-upload {
+    display: none;
+}
+.profile-name{
+    color:#696969;
+    font-weight: 400;
+}
+.nav-links {
+    list-style: none;
+    padding:15px;
+    margin: 40px;
+    font-size: 1.2rem;
+    color:#696969;   
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    padding:5px;
+    margin: 5px 0;
+}
+.nav-item:hover{
+    color:#2d3253;
+    cursor: pointer;
+}
+.nav-item svg{
+    margin-right: 20px;
+}
+
