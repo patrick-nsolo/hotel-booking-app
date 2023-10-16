@@ -6,7 +6,7 @@ import './navigationBar.css';
 function NavigationBar() {
     const [profileImage, setProfileImage] = useState(null);
     const [isEditingImage, setIsEditingImage] = useState(false);
-    const [activeLink, setactiveLink] = useState(0);
+    const [activeLink, setActiveLink] = useState(0);
 
 
     const handleImageUpload = (e) => {
@@ -49,11 +49,11 @@ function NavigationBar() {
             </div>
             <div className='navigation'>
                 <ul className='nav-links'>
-                    <li className={`nav-item ${isClicked ? 'clicked' : ''}`} onClick={handleClick}><FaHome/>Dashboard</li>
-                    <li className='nav-item'><FaCity/>Explore City</li>
-                    <li className='nav-item'><FaEnvelope/>Ticket</li>
-                    <li className='nav-item'><FaHeart/>Favorites</li>
-                    <li className='nav-item'><FaCog/>Settings</li>
+                    <li className={`nav-item ${activeLink === 0 ? 'clicked' : ''}`} onClick={() => handleClick(0)}><FaHome/>Dashboard</li>
+                    <li className={`nav-item ${activeLink === 1 ? 'clicked' : ''}`} onClick={() => handleClick(1)}><FaCity/>Explore City</li>
+                    <li className={`nav-item ${activeLink === 2 ? 'clicked' : ''}`} onClick={() => handleClick(2)}><FaEnvelope/>Ticket</li>
+                    <li className={`nav-item ${activeLink === 3 ? 'clicked' : ''}`} onClick={() => handleClick(3)}><FaHeart/>Favorites</li>
+                    <li className={`nav-item ${activeLink === 4 ? 'clicked' : ''}`} onClick={() => handleClick(4)}><FaCog/>Settings</li>
                 </ul>
             </div>
         </div>
