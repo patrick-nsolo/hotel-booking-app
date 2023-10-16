@@ -27,7 +27,15 @@ function NavigationBar() {
         <div className='navbar'>
             <div className='logo'>
                 <h1 className='logo-name'>Mima<span>Booking</span></h1>
-                <label
+                <label className='profile-image-label' onClick={openImageUpload}>
+                    {profileImage ? (
+                        <img src={profileImage} alt='Profile'/>
+                    ):(
+                        <div className='default-image'>
+
+                        </div>
+                    )}
+                </label>
 
             </div>
         
