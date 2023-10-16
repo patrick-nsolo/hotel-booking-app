@@ -1,11 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { FaSearch } from 'react-icons/fa';
+import './TopBar.css';
 
-function mainBackground() {
+function TopBar() {
   return (
-    <div>
+    <div className='top-bar'>
+      <div className='search-bar'>
+        <div className="search-content">
+          <FaSearch className="search-icon" />
+          <input type="text" placeholder="Search anything" />
+        </div>
+      </div>
       
     </div>
   )
 }
 
-export default mainBackground
+export default TopBar;
+
