@@ -1,10 +1,14 @@
 import React from "react";
 import NavigationBar from "./components/navigationBar/navigationBar";
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <NavigationBar/>
+      <div className="content">
+        
+      </div>
     </div>
   );
 }

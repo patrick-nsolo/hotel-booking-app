@@ -58,9 +58,8 @@ function NavigationBar() {
             </div>
             <div className='logout'>
                 <span ><FaArrowRight/>Dashboard</span>
-
             </div>
-        </div>
+        </div>             
     )
 }
 
