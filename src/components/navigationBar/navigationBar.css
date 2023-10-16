@@ -71,4 +71,8 @@
 .nav-item svg{
     margin-right: 20px;
 }
-
+.logout span{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+}
