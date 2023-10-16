@@ -56,6 +56,9 @@ function NavigationBar() {
                     <li className={`nav-item ${activeLink === 4 ? 'clicked' : ''}`} onClick={() => handleClick(4)}><FaCog/>Settings</li>
                 </ul>
             </div>
+            <div className='logout'>
+
+            </div>
         </div>
     )
 }
