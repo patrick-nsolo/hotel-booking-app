@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navigationBar.css';
 
+
 function NavigationBar() {
     const [profileImage, setProfileImage] = useState('default-image.jpg');
 
@@ -17,7 +18,7 @@ function NavigationBar() {
     return (
         <div className='navbar'>
             <div className='logo'>
-                <img src='logo.png' alt='hotel-logo'/>
+                <h1 className='logo-name'>Mima<span>Booking</span></h1>
 
             </div>
         
