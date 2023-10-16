@@ -1,9 +1,16 @@
 .navbar{
     width:20%;
     height:100vh;
-    background-color: red;
+    background-color: #fff;
 }
 .logo{
     text-align: center;
     align-items: center;
+    margin-top: 50px;
+}
+.logo-name{
+    color:#2d3253;
+}
+.logo-name span{
+    color:#696969;
 }

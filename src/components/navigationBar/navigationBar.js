@@ -3,7 +3,7 @@ import './navigationBar.css';
 
 
 function NavigationBar() {
-    const [profileImage, setProfileImage] = useState('default-image.jpg');
+    const [profileImage, setProfileImage] = useState('null');
 
     const handleImageUpload = (e) => {
         const file = e.target.files[0];
@@ -19,6 +19,7 @@ function NavigationBar() {
         <div className='navbar'>
             <div className='logo'>
                 <h1 className='logo-name'>Mima<span>Booking</span></h1>
+                <input type='file' id='image-upload' accept='image/*' onChange={handleImageUpload}/>
 
             </div>
         
