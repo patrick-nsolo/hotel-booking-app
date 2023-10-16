@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEdit, FaHome, FaCity, FaEnvelope, FaHeart, FaCog } from 'react-icons/fa';
+import { FaEdit, FaHome, FaCity, FaEnvelope, FaHeart, FaCog, FaArrowRight } from 'react-icons/fa';
 import './navigationBar.css';
 
 
@@ -57,6 +57,7 @@ function NavigationBar() {
                 </ul>
             </div>
             <div className='logout'>
+                <li ><FaArrowRight/>Dashboard</li>
 
             </div>
         </div>
