@@ -10,6 +10,7 @@ function TopBar() {
   const [startDate, setStartDate] = useState(new Date());
   const [destination, setDestination] = useState('');
   const [occupants, setOccupants] = useState('');
+  const [selectedSlide, setSelectedSlide] = useState(0);
 
   const handleDestinationChange = (e) => {
     setDestination(e.target.value);
@@ -18,6 +19,13 @@ function TopBar() {
   const handleOccupantsChange = (e) => {
     setOccupants(e.target.value);
   }
+
+  const handlePreviousSlide = () => {
+    setSelectedSlide(selectedSlide - 1);
+  };
+  const handleNextSlide = () => {
+    setSelectedSlide(selectedSlide + 1);
+  };
 
   return (
     <div className='topbar-container'>
@@ -66,7 +74,28 @@ function TopBar() {
               </select>
           </div>
         </div>
-      </div>  
+      </div> 
+      <div className='carousel-container'>
+        <div className='carousel-title'>
+          <h3>Trending Destinations</h3>
+          <div className='carousel-btns'>
+
+          </div>
+
+        </div>
+        <Carousel showThumbs={true} showArrows={true}>
+            <div className='slide-one'>
+              <img src='/images/moscow-russia.jpg' alt='Slide 1' />
+            </div>
+            <div className='slide-two'>
+              <img src='/images/seoul-korea.jpg' alt='Slide 2' />
+            </div>
+            <div className='slide-three'>
+              <img src='/images/tokyo-japan.jpg' alt='Slide 3' />
+            </div>
+
+        </Carousel>
+      </div> 
     </div>  
   )
 }
