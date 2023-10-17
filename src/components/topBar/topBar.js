@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaSearch, FaBell } from 'react-icons/fa';
 import ReactDatePicker from 'react-datepicker';
+import MapMarker from '../mapMarker/mapMarker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './TopBar.css';
 
@@ -36,6 +37,7 @@ function TopBar() {
         <img src='/images/hero-image.png' alt='couch'/>
         <div className='dropdown-container'>
           <div className='location-dropdown'>
+              <MapMarker/>
               <select value={destination} onChange={handleDestinationChange}>
                 <option value="">Where are you going?</option>
                 <option value="Japan">Japan</option>
@@ -43,9 +45,19 @@ function TopBar() {
                 <option value="Russia">Russia</option>
               </select>
           </div>
+          <div className="date-picker">
+            <div className="date-picker-input">
+                <span className="date-placeholder">Check-in Date</span>
+                <ReactDatePicker
+                  selected={startDate}
+                  onChange={date => setStartDate(date)}
+                  popperPlacement="bottom-start"
+                />
+            </div>
+          </div>
           <div className='location-dropdown'>
               <select value={occupants} onChange={handleOccupantsChange}>
-                
+                <option value="">Number of Occupants</option>
                 <option value="1person">1 Person</option>
                 <option value="2persons">2 Persons</option>
                 <option value="3persons">3 Persons</option>
