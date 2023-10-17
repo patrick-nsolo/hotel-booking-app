@@ -9,7 +9,7 @@ function TopBar() {
         <div className='search-bar'>
           <div className="search-content">
             <FaSearch className="search-icon" />
-            <input type="text" placeholder="Search anything" />
+            <input type="text" placeholder="Search any things..." />  
           </div>
         </div> 
         <div className='date-notification'>
@@ -17,6 +17,9 @@ function TopBar() {
           <FaBell className='bell-icon'/>
           <div className='notification-dot'></div>
         </div> 
+      </div>
+      <div>
+        <img src='../images/hero-image.png' alt='couch'/>
       </div>  
     </div>  
   )

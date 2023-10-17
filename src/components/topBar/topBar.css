@@ -1,6 +1,7 @@
 .topbar-container{
     padding:0 40px 0 40px;
     user-select: none;
+    align-items: center;
 }
 .top-bar{
     background-color: #fff;
@@ -21,7 +22,25 @@
     display: flex;
     align-items: center;
 }
+.search-icon {
+    font-size: 1rem;
+    margin-left: 10px;
+    color: #696969;
+    
+}
 .search-content{
-    display: flex;
-    align-items: center;
+    background-color: #fff;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+}
+input {
+    border: none;
+    border-radius: 5px;
+    height:40px;
+    width: 200px;
+    background: transparent;
+    margin-left: 4px;
+}
+input.clicked{
+    border: none;
 }
