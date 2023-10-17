@@ -10,8 +10,7 @@ function TopBar() {
           <FaSearch className="search-icon" />
           <input type="text" placeholder="Search anything" />
         </div>
-      </div>
-      
+      </div>  
     </div>
   )
 }
