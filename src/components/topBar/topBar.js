@@ -4,14 +4,16 @@ import './TopBar.css';
 
 function TopBar() {
   return (
-    <div className='top-bar'>
-      <div className='search-bar'>
-        <div className="search-content">
-          <FaSearch className="search-icon" />
-          <input type="text" placeholder="Search anything" />
-        </div>
-      </div>  
-    </div>
+    <div className='topbar-container'>
+      <div className='top-bar'>
+        <div className='search-bar'>
+          <div className="search-content">
+            <FaSearch className="search-icon" />
+            <input type="text" placeholder="Search anything" />
+          </div>
+        </div>  
+      </div>
+    </div>  
   )
 }
 
