@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaSearch, FaBell, FaCalendar, FaUser, FaMapMarker } from 'react-icons/fa';
-import { Carousel } from 'react-responsive-carousel';
 import ReactDatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -10,7 +9,7 @@ function TopBar() {
   const [startDate, setStartDate] = useState(new Date());
   const [destination, setDestination] = useState('');
   const [occupants, setOccupants] = useState('');
-  const [selectedSlide, setSelectedSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleDestinationChange = (e) => {
     setDestination(e.target.value);
@@ -21,18 +20,13 @@ function TopBar() {
   }
 
   const handlePreviousSlide = () => {
-    setSelectedSlide(selectedSlide - 1);
+    setCurrentSlide(currentSlide - 1);
   };
 
   const handleNextSlide = () => {
-    setSelectedSlide(selectedSlide + 1);
+    setCurrentSlide(currentSlide + 1);
   };
 
-  const images = [
-    '/images/moscow-russia.jpg',
-    '/images/seoul-korea.jpg',
-    '/images/tokyo-japan.jpg',
-  ]
   return (
     <div className='topbar-container'>
       <div className='top-bar'>
@@ -90,7 +84,32 @@ function TopBar() {
             <button className='right' onClick={handleNextSlide}><span>&#62;</span></button>
           </div>
         </div>
-        
+        <div className='destinations'>
+          <div className='slide-one slide-one-BG'>
+            <img src='/images/seoul-korea.png' alt=''/>
+            <div className='slide-text'>
+              <h3>Seoul, Korea</h3>
+              <p>Visiting the best tourist areas chosen by the audience.</p>
+              <p>$450,000</p>
+            </div>
+          </div>
+          <div className='slide-one slide-two-BG'>
+            <img src='/images/tokyo-japan.jpg' alt=''/>
+            <div className='slide-text'>
+              <h3>Tokyo, Japan</h3>
+              <p>One of the best selling tours to Japan.</p>
+              <p>$600,000</p>
+            </div>
+          </div>
+          <div className='slide-one slide-three-BG'>
+            <img src='/images/moscow-russia.jpg' alt=''/>
+            <div className='slide-text'>
+              <h3>Seoul, Korea</h3>
+              <p>Russia is One of the best places to visit</p>
+              <p>$450,000</p>
+            </div>
+          </div>
+        </div>
       </div> 
     </div>  
   )

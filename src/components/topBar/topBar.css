@@ -76,9 +76,6 @@ input {
     justify-content: space-between;
     align-items: center;
 }
-.carousel-btns{
-    
-}
 .carousel-btns button{
     border-radius: 7px;    
 }
@@ -90,4 +87,21 @@ input {
 }
 .left:hover, .right:hover{
     color:#fff;
+}
+.destinations{
+    display:flex;
+}
+.slide-one{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px;
+}
+.slide-one img{
+    width:33.3%;
+    height:120px;
+    border-radius: 20px;
+}
+.slide-text{
+    line-height: 15px;
 }
