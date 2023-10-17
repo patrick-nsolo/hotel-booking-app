@@ -104,13 +104,18 @@ function TopBar() {
           <div className='slide-one slide-three-BG'>
             <img src='/images/moscow-russia.jpg' alt=''/>
             <div className='slide-text'>
-              <h3>Seoul, Korea</h3>
+              <h3>Moscow, Russia</h3>
               <p>Russia is One of the best places to visit</p>
               <p>$450,000</p>
             </div>
           </div>
         </div>
       </div> 
+      <div className='best-offers-container'>
+        
+
+
+      </div>
     </div>  
   )
 }
