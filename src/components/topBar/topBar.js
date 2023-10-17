@@ -89,7 +89,7 @@ function TopBar() {
             <img src='/images/seoul-korea.png' alt=''/>
             <div className='slide-text'>
               <h3>Seoul, Korea</h3>
-              <p>Visiting the best tourist areas chosen by the audience.</p>
+              <p>The best tourist areas chosen by the audience.</p>
               <p>$450,000</p>
             </div>
           </div>

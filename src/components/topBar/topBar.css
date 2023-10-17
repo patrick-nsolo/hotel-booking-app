@@ -90,18 +90,29 @@ input {
 }
 .destinations{
     display:flex;
+    justify-content: space-between;
 }
 .slide-one{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px;
+}
+.slide-one-BG, .slide-two-BG, .slide-three-BG{
     background-color: #fff;
-    padding: 10px;
+    width:300px;
+    border-radius: 20px;
 }
 .slide-one img{
-    width:33.3%;
-    height:120px;
+    width:80px;
+    height:80px;
     border-radius: 20px;
 }
 .slide-text{
+    margin-top: -15px;
+    margin-left: 10px;
     line-height: 15px;
+    height:50px;
+}
+.slide-text p{
+    margin-top: -10px;
 }
