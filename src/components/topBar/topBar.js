@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch, FaBell } from 'react-icons/fa';
 import './TopBar.css';
 
 function TopBar() {
@@ -11,8 +11,13 @@ function TopBar() {
             <FaSearch className="search-icon" />
             <input type="text" placeholder="Search anything" />
           </div>
-        </div>  
-      </div>
+        </div> 
+        <div className='date-notification'>
+          <div className='date'>October 16, 2023</div>
+          <FaBell className='bell-icon'/>
+          <div className='notification-dot'></div>
+        </div> 
+      </div>  
     </div>  
   )
 }

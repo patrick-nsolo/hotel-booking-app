@@ -1,4 +1,27 @@
+.topbar-container{
+    padding:0 40px 0 40px;
+    user-select: none;
+}
 .top-bar{
     background-color: #fff;
-    padding:40px 0 40px 0;
+    padding: 30px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.date-notification{
+    display: flex;
+    justify-content: space-evenly;
+}
+.date{
+    margin-top: -3px;
+    margin-right: 5px;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+.search-content{
+    display: flex;
+    align-items: center;
 }
