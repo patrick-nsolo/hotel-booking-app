@@ -5,7 +5,7 @@
 }
 .top-bar{
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     display:flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@
 input {
     border: none;
     border-radius: 5px;
-    height:40px;
+    height:30px;
     width: 200px;
     background: transparent;
     margin-left: 4px;
@@ -62,6 +62,15 @@ input {
     position: relative;
     z-index: 2;
 }
+.search-btn{
+    height:50px;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+    background-color: #2d3253;
+    color:#fff;
+    font-weight: 600;
+}
 .carousel-title{
     display: flex;
     justify-content: space-between;
@@ -69,4 +78,16 @@ input {
 }
 .carousel-btns{
     
+}
+.carousel-btns button{
+    border-radius: 7px;    
+}
+.carousel-btns button:hover{
+    background-color:#2d3253 ;
+}
+.left{
+    margin-right: 10px;
+}
+.left:hover, .right:hover{
+    color:#fff;
 }

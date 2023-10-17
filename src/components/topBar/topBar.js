@@ -23,10 +23,16 @@ function TopBar() {
   const handlePreviousSlide = () => {
     setSelectedSlide(selectedSlide - 1);
   };
+
   const handleNextSlide = () => {
     setSelectedSlide(selectedSlide + 1);
   };
 
+  const images = [
+    '/images/moscow-russia.jpg',
+    '/images/seoul-korea.jpg',
+    '/images/tokyo-japan.jpg',
+  ]
   return (
     <div className='topbar-container'>
       <div className='top-bar'>
@@ -73,28 +79,18 @@ function TopBar() {
                 <option value="3persons">3 Persons</option>
               </select>
           </div>
+          <button className='search-btn'>Search</button>
         </div>
       </div> 
       <div className='carousel-container'>
         <div className='carousel-title'>
           <h3>Trending Destinations</h3>
           <div className='carousel-btns'>
-            <button onClick={handlePreviousSlide}>&#62;</button>
-            <button onClick={handleNextSlide}><span></span></button>
+            <button className='left' onClick={handlePreviousSlide}><span>&#60;</span></button>
+            <button className='right' onClick={handleNextSlide}><span>&#62;</span></button>
           </div>
         </div>
-        <Carousel showThumbs={true} showArrows={true}>
-            <div className='slide-one'>
-              <img src='/images/moscow-russia.jpg' alt='Slide 1' />
-            </div>
-            <div className='slide-two'>
-              <img src='/images/seoul-korea.jpg' alt='Slide 2' />
-            </div>
-            <div className='slide-three'>
-              <img src='/images/tokyo-japan.jpg' alt='Slide 3' />
-            </div>
-
-        </Carousel>
+        
       </div> 
     </div>  
   )
