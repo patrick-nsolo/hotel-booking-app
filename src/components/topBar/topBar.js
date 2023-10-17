@@ -79,9 +79,9 @@ function TopBar() {
         <div className='carousel-title'>
           <h3>Trending Destinations</h3>
           <div className='carousel-btns'>
-
+            <button onClick={handlePreviousSlide}>&#62;</button>
+            <button onClick={handleNextSlide}><span></span></button>
           </div>
-
         </div>
         <Carousel showThumbs={true} showArrows={true}>
             <div className='slide-one'>
