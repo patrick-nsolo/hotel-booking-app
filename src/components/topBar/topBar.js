@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { FaSearch, FaBell, FaCalendar, FaUser, FaMapMarker } from 'react-icons/fa';
+import { Carousel } from 'react-responsive-carousel';
 import ReactDatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './TopBar.css';
 
 function TopBar() {
